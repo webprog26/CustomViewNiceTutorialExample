@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.webprog26.viewcustom.MainActivity">
+<com.example.webprog26.viewcustom.ValueSelector
+    android:id="@+id/valueSelector"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/valueSelector_height"
+    android:layout_below="@+id/valueBar"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"/>
+    <com.example.webprog26.viewcustom.ValueBar
+        android:id="@+id/valueBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/value_bar_padding_top"
+        android:paddingLeft="@dimen/value_bar_padding_horizontal"
+        android:paddingRight="@dimen/value_bar_padding_horizontal"
+        app:barHeight="@dimen/value_bar_barHeight"
+        app:baseColor="@android:color/holo_blue_dark"
+        app:circleRadius="@dimen/value_bar_circleRadius"
+        app:spaceAfterBar="@dimen/value_bar_spaceAfterBar"
+        app:circleTextColor="@android:color/white"
+        app:circleTextSize="@dimen/value_bar_circleTextSize"
+        app:fillColor="@android:color/holo_red_dark"
+        app:labelText="@string/valueBarLabel"
+        app:labelTextColor="@android:color/holo_blue_dark"
+        app:labelTextSize="@dimen/value_bar_labelTextSize"
+        app:maxValueTextColor="@android:color/holo_blue_dark"
+        app:maxValueTextSize="@dimen/value_bar_maxValueTextSize"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonUpdate"
+        android:text="Button"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
